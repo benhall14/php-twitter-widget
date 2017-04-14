@@ -1,0 +1,111 @@
+.twitter-widget{
+    width: 500px;
+    margin: auto;
+}
+
+.twitter-widget h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.twitter-widget ul.tweet-list{
+    padding: 0;
+    margin: 0;
+}
+
+.twitter-widget ul.tweet-list li{
+    padding: 15px;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.twitter-widget ul.tweet-list li:first-child{
+	border-radius: 4px 4px 0px 0px;
+}
+
+.twitter-widget ul.tweet-list li:last-child{
+	border-radius: 0px 0px 4px 4px;
+}
+
+.twitter-widget ul.tweet-list li:nth-child(odd){
+    background: #F1F1F1;
+}
+
+.twitter-widget ul.tweet-list li:hover{
+    background: #F9F9F9;
+}
+
+.twitter-widget .icon{
+	width: 50px;
+	height: 50px;
+	background: url('../img/twitter.png');
+	float: right;
+	margin: -2px -2px 0 0;
+}
+
+.twitter-widget .retweeted{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.twitter-widget .tweet-avatar{
+    margin-left: 50px;
+    height: 50px;
+}
+
+.twitter-widget .tweet-avatar:after{
+    clear: both;
+}
+
+.twitter-widget .tweet-avatar a img{
+    width:48px;
+    height:48px;
+    float:left;
+    margin: 1px 1px 1px -48px;
+    border-radius: 4px;
+}
+
+.twitter-widget div.tweet-name,
+.twitter-widget div.tweet-screen {
+    display: block;
+    padding: 0 10px;
+}
+
+.twitter-widget div.tweet-name a,
+.twitter-widget div.tweet-screen a{
+    text-decoration: none;
+}
+
+.twitter-widget div.tweet-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    padding-top: 8px;
+}
+
+.twitter-widget div.tweet-screen {
+    font-size: 13px;
+    line-height: 16px;
+    padding-bottom: 7px;
+}
+
+.twitter-widget .tweet-content{
+    padding: 10px;
+}
+
+.twitter-widget .tweet-media {
+    margin-bottom: 10px;
+}
+
+.twitter-widget .tweet-media img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.twitter-widget .tweet-date {
+    text-align: right;
+    color: #AAA;
+    text-transform: uppercase;
+    font-size: 12px;
+}

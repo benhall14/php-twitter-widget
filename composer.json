@@ -1,0 +1,24 @@
+{
+    "name": "benhall14/php-twitter-widget",
+    "description": "A PHP alternative to the Twitter Embed Timelines JavaScript.",
+    "homepage": "https://github.com/benhall14/php-twitter-widget",
+    "keywords": ["twitter"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Hall",
+            "email": "benhall14@hotmail.com",
+            "homepage": "https://github.com/benhall14",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "abraham/twitteroauth": "^0.7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "benhall14\\": "src/"
+        }
+    }
+}
