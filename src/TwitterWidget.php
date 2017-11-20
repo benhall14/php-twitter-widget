@@ -116,7 +116,7 @@ class TwitterWidget
     }
 
     /**
-     * [get description]
+     * Get the feed from the cache or API
      * @param  integer $limit The number of items to return.
      * @return array         The content
      */
@@ -134,14 +134,14 @@ class TwitterWidget
 
         #$content = $connection->get("statuses/home_timeline", ["count" => 25, "exclude_replies" => true]);
 
-        $content = $connection->get("statuses/user_timeline", [
+        $content = $connection->get("statuses/user_timeline", array(
             "screen_name" => $this->twitter_user,
             #"trim_user" => true,
             "count" => $this->tweet_limit,
             #"include_entities" => true,
             "tweet_mode" => "extended",
             "exclude_replies" => true
-        ]);
+        ));
 
         if ($content) {
             if (!file_put_contents($this->cache_file, json_encode($content))) {
