@@ -2,7 +2,7 @@
     "name": "benhall14/php-twitter-widget",
     "description": "A PHP alternative to the Twitter Embed Timelines JavaScript.",
     "homepage": "https://github.com/benhall14/php-twitter-widget",
-    "keywords": ["twitter"],
+    "keywords": ["twitter", "twitter feed", "twitter json"],
     "license": "MIT",
     "authors": [
         {

@@ -7,6 +7,8 @@ I decided to create a script that will fetch tweets server side, and allow for i
 
 Using the popular TwitterOAuth PHP Library for authentication, we can access the Twitter Rest API.
 
+Works with *PHP 5.3 through to **PHP 7**.*
+
 # Usage
 
 First, you need to head over to <a href="https://apps.twitter.com/" target="_blank">https://apps.twitter.com</a> and register your new Application. You will need the following keys for your new 'App'.
@@ -27,14 +29,14 @@ require '../vendor/autoload.php';
 
 try {
     $twitterWidget = new TwitterWidget(
-        $consumer_key, # your Twitter consumer key
-        $consumer_secret, # your Twitter consumer secret
-        $access_token, # your Twitter access token
-        $access_token_secret, # your Twitter access token secret
-        'nasa', # the screen name of the Twitter feed to display
-        15, # the number of tweets to return
+        $consumer_key,             # your Twitter consumer key
+        $consumer_secret,          # your Twitter consumer secret
+        $access_token,             # your Twitter access token
+        $access_token_secret,      # your Twitter access token secret
+        'nasa',                    # the screen name of the Twitter feed to display
+        15,                        # the number of tweets to return
         '../cache/twitter_status_feed.json', # path to the cache file
-        3600 # the number of seconds to cache the feed for, default is 3600 (1 hour)
+        3600                       # the number of seconds to cache the feed for, default is 3600 (1 hour)
     );
 } catch (Exception $e) {
     /* handle any error thrown, such as unwritable cache file */
@@ -49,11 +51,20 @@ You can then use the following to display the feed on your web page, passing the
 ```
 
 # Requirements
-PHP 5.5+
 
-TwitterOAuth Library
+**Works with PHP 5.3, PHP 5.5, PHP 5.6, and PHP 7**
+
+**PHP CURL Extension**
+
+**TwitterOAuth Library**
 
 # License
 Copyright (c) 2016-2017 Benjamin Hall, benhall14@hotmail.com
 
 Licensed under the MIT license
+
+# Donate?
+
+If you find this project helpful or useful in anyway, please consider getting me a cup of coffee - It's really appreciated :)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/benhall14)
