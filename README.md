@@ -7,7 +7,7 @@ I decided to create a script that will fetch tweets server side, and allow for i
 
 Using the popular TwitterOAuth PHP Library for authentication, we can access the Twitter Rest API.
 
-Works with *PHP 5.3 through to **PHP 7**.*
+Works with *PHP 5.3+ through to **PHP 7**.*
 
 # Usage
 
@@ -59,7 +59,8 @@ You can then use the following to display the feed on your web page, passing the
 **TwitterOAuth Library**
 
 # License
-Copyright (c) 2016-2017 Benjamin Hall, benhall14@hotmail.com
+Copyright (c) 2016-2017 Benjamin Hall, ben@conobe.co.uk
+https://conobe.co.uk
 
 Licensed under the MIT license
 
