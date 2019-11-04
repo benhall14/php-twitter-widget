@@ -47,7 +47,7 @@ try {
 You can then use the following to display the feed on your web page, passing the your chosen feed title, such as "My Tweets". The second optional parameter should be a boolean of whether to print(true) or return(false) the formatted feed. The third optional parameter is the tweet date format - default = M d H:i A.
 
 ```php
-<php echo $twitterWidget->display('My Tweets', true, 'M d H:i A'); ?>
+echo $twitterWidget->display('My Tweets', true, 'M d H:i A');
 ```
 
 # Requirements
